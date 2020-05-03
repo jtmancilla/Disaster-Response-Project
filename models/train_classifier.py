@@ -31,7 +31,7 @@ from sklearn.externals import joblib
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import confusion_matrix
-from sklearn.linear_model import RidgeClassifier
+from sklearn.svm import LinearSVC
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import FeatureUnion
 
@@ -124,14 +124,13 @@ def build_model():
             
         ])),
 
-        ('clf', MultiOutputClassifier(OneVsRestClassifier(RidgeClassifier())))
+        ('clf', MultiOutputClassifier(OneVsRestClassifier(LinearSVC(random_state = 0))))
     ])        
  
     parameters = {
                 'features__text_pipeline__tfidf__use_idf': [True, False],
                 'features__text_pipeline__tfidf__smooth_idf':[True, False],
-                'clf__estimator__estimator__alpha': [0.01,0.5,1,2,5],
-                'clf__estimator__estimator__normalize': [True,False]
+                'clf__estimator__estimator__C': [1, 2, 5]
                 
              }
 
