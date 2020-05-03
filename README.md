@@ -5,11 +5,26 @@
 
 ### Table of Contents
 
-1. [Installation](#installation)
-2. [Project Motivation](#motivation)
+1. [Project Motivation](#motivation)
+2. [Installation](#installation)
 3. [File Descriptions](#files)
 4. [Results](#results)
 5. [Licensing, Authors, and Acknowledgements](#licensing)
+
+
+## Project Motivation<a name="motivation"></a>
+
+
+In this project, I was interestested to analyze disaster data to build a Natural Language Processing Model for an API that classifies disaster messages in real time.
+
+The project is divided in three sections:
+
+* **Data Processing**: build an ETL (Extract, Transform, and Load) Pipeline to extract data from the given dataset, clean the data, and then store it in a SQLite database
+* **Machine Learning Pipeline**: split the data into a training set and a test set. Then, create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that predicts a message classifications for the 36 categories (multi-output classification)
+* **Web development** develop a web application to show classify messages in real time.
+
+
+![App](img/graphs.png)
 
 
 ## Installation <a name="installation"></a>
@@ -39,20 +54,6 @@ The code should run with no issues using Python versions 3.7.3 and the following
 ![dash_aplication](img/dash_aplication.png)
 
 
-
-## Project Motivation<a name="motivation"></a>
-
-
-In this project, I was interestested to analyze disaster data to build a Natural Language Processing Model for an API that classifies disaster messages in real time.
-
-The project is divided in three sections:
-
-* **Data Processing**: build an ETL (Extract, Transform, and Load) Pipeline to extract data from the given dataset, clean the data, and then store it in a SQLite database
-* **Machine Learning Pipeline**: split the data into a training set and a test set. Then, create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that predicts a message classifications for the 36 categories (multi-output classification)
-* **Web development** develop a web application to show classify messages in real time.
-
-
-![App](img/graphs.png)
 
 
 ## File Description
