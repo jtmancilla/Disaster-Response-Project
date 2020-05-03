@@ -81,7 +81,7 @@ Type in: We need coronavirus treatments in the hospital of Ecatepec.
 ![Clasification](img/results.png)
 
 
-I deployed the aplication on a cloud platform. You can find it [here](https://dsp-disaster-response-app.herokuapp.com/).  
+[App](https://dsp-disaster-response-app.herokuapp.com/). I deployed the aplication on a cloud platform. 
 
 
 
