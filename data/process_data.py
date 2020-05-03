@@ -1,7 +1,6 @@
 """
 PRE-PROCESSING DATA
 Disaster Response Pipeline Project
-Udacity - Data Science Nanodegree
 
 How to run this script
 > python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
