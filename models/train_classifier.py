@@ -130,8 +130,7 @@ def build_model():
     parameters = {
                 'features__text_pipeline__tfidf__use_idf': [True, False],
                 'features__text_pipeline__tfidf__smooth_idf':[True, False],
-                # RidgeClassifier().get_params()
-                'clf__estimator__estimator__alpha': [.01,1,2,5],
+                'clf__estimator__estimator__alpha': [0.01,0.5,1,2,5],
                 'clf__estimator__estimator__normalize': [True,False]
                 
              }
