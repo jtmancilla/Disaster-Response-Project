@@ -77,6 +77,8 @@ The project is divided in three sections:
 
 Type in: We need coronavirus treatments in the hospital of Ecatepec.
 
+![App](https://dsn-app-disaster-response.herokuapp.com/)
+
 ![Clasification](img/results.png)
 
 
