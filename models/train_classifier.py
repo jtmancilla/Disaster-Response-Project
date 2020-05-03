@@ -1,7 +1,6 @@
 """
 TRAIN CLASSIFIER
 Disaster Resoponse Project
-Udacity - Data Science Nanodegree
 
 How to run this script
 > python train_classifier.py ../data/DisasterResponse.db classifier.pkl
@@ -132,7 +131,7 @@ def build_model():
                 'features__text_pipeline__tfidf__use_idf': [True, False],
                 'features__text_pipeline__tfidf__smooth_idf':[True, False],
                 # RidgeClassifier().get_params()
-                'clf__estimator__estimator__alpha': [.01,1,5],
+                'clf__estimator__estimator__alpha': [.01,1,2,5],
                 'clf__estimator__estimator__normalize': [True,False]
                 
              }
